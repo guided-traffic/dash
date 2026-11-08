@@ -78,11 +78,27 @@
       "enabled": true
     },
     {
-      "description": "Go modules: automerge minor and patch after CI passes",
+      "description": "Go modules: automerge minor and patch after CI passes, all in one pull request, since each would rewrite go.sum and conflict with the others once one is merged (docs/adr/0014 D1); golang.org/x stays with the Go version",
       "matchManagers": ["gomod"],
       "matchDepTypes": ["require", "indirect"],
       "matchUpdateTypes": ["minor", "patch", "digest"],
+      "matchPackageNames": ["!/^golang\\.org\\/x\\//"],
+      "groupName": "Go modules",
+      "groupSlug": "go-modules",
       "automerge": true
+    },
+    {
+      "description": "golang.org/x: automerge with the Go version group",
+      "matchManagers": ["gomod"],
+      "matchPackageNames": ["/^golang\\.org\\/x\\//"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "automerge": true
+    },
+    {
+      "description": "k8s.io/kube-openapi moves with the Kubernetes modules, never by itself: its commits run ahead of the structured-merge-diff major that k8s.io/apimachinery builds against (docs/adr/0014 D3)",
+      "matchManagers": ["gomod"],
+      "matchPackageNames": ["k8s.io/kube-openapi"],
+      "enabled": false
     },
     {
       "description": "Go modules: a major of a direct require waits for a person",
@@ -108,10 +124,12 @@
       "groupSlug": "angular"
     },
     {
-      "description": "Frontend npm: automerge minor and patch after CI passes",
+      "description": "Frontend npm: automerge minor and patch after CI passes, all in one pull request, Angular included, since each would rewrite package-lock.json (docs/adr/0014 D1); an Angular major keeps the Angular group",
       "matchManagers": ["npm"],
       "matchFileNames": ["frontend/package.json"],
       "matchUpdateTypes": ["minor", "patch", "digest"],
+      "groupName": "Frontend npm",
+      "groupSlug": "frontend-npm",
       "automerge": true
     },
     {
@@ -141,10 +159,12 @@
       "automerge": false
     },
     {
-      "description": "Release tooling (root package.json): automerge minor and patch; the release-tooling job proves the set still renders notes",
+      "description": "Release tooling (root package.json): automerge minor and patch, in one pull request for the root package-lock.json (docs/adr/0014 D1); the release-tooling job proves the set still renders notes",
       "matchManagers": ["npm"],
       "matchFileNames": ["package.json"],
       "matchUpdateTypes": ["minor", "patch", "digest"],
+      "groupName": "Release tooling",
+      "groupSlug": "release-tooling",
       "automerge": true
     },
     {

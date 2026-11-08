@@ -2,8 +2,12 @@
 
 ## Status
 
-Accepted 2026-10-26. **Built** in the Makefile and `renovate.json`. **Not verified:** Renovate has not
-run against the repository yet.
+Accepted 2026-10-26. **Built** in the Makefile and `renovate.json`; Renovate runs against the
+repository nightly since 2026-10-28 and merged its first pull requests itself (#23 to #28).
+**Amended** 2026-11-08 by [ADR 0014](0014-renovate-one-pull-request-per-lock-file-a-run-after-every-green-check.md):
+D4's minor and patch updates move in one pull request per lock file, Renovate runs again after the
+green checks of its own pull requests, `k8s.io/kube-openapi` moves with the Kubernetes modules only,
+and every job with Node.js runs D1's Node.
 
 ## Context
 
@@ -25,7 +29,8 @@ CI runs the same targets.
 **D4 — Renovate** (cowork's ADR 0062): Go patches at once, Go minors after seven days, as one group
 across both `go.mod` files, both Containerfiles, the workflows and the release template; the Makefile
 pins automerge minor and patch; Angular moves as one group; distroless digests automerge; majors wait
-for a person, except GitHub Actions.
+for a person, except GitHub Actions. *(Amended by ADR 0014 D1 to D3: one pull request per lock file,
+a run after every green check, kube-openapi with Kubernetes.)*
 
 ## Consequences
 

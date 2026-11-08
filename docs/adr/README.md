@@ -33,3 +33,4 @@ says so.
 | [0011](0011-badges-on-icons-from-definitions-and-rules.md) | Badges on icons, macOS style, from definitions and rules | Yes |
 | [0012](0012-a-technical-editorial-look-the-apps-beside-the-bookmarks.md) | A technical editorial look; the overview above the apps beside the bookmarks; three self-hosted faces (amended by 0013) | Yes |
 | [0013](0013-the-environment-under-cogpits-light-strip-no-counts-of-states.md) | No counts of states; the greeting welcomes to the environment under Cogpit's light strip | Yes |
+| [0014](0014-renovate-one-pull-request-per-lock-file-a-run-after-every-green-check.md) | Renovate: one pull request per lock file, a run after every green check, kube-openapi with Kubernetes, one Node in CI (amends 0006) | Yes |

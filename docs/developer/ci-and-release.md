@@ -36,8 +36,12 @@ packaged at the release's version and merged into the index on `gh-pages`, serve
 
 ## Renovate (`.github/workflows/renovate.yml`, `renovate.json`)
 
-Daily at 02:00 Europe/Berlin with the GitHub App's token. The rules are
-[ADR 0006](../adr/0006-one-version-of-every-tool.md) D4.
+Daily at 02:00 Europe/Berlin with the GitHub App's token, and again after every green Test and Release
+run on one of its own `renovate/` branches, so a green pull request is merged within minutes; one run at
+a time. Minor and patch updates come in one pull request per lock file: `renovate/go-modules`,
+`renovate/frontend-npm`, `renovate/release-tooling`, `renovate/icon-packs`; a major comes alone and
+waits for a person. The rules are [ADR 0006](../adr/0006-one-version-of-every-tool.md) D4 as amended by
+[ADR 0014](../adr/0014-renovate-one-pull-request-per-lock-file-a-run-after-every-green-check.md).
 
 ## Secrets and settings
 

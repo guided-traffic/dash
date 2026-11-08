@@ -4,6 +4,13 @@ on:
   schedule:
     - cron: '0 2 * * *'
       timezone: "Europe/Berlin"
+  # Again as soon as the checks of one of its own pull requests finished green,
+  # so Renovate merges it within minutes instead of on the next night, and
+  # rebases what that merge put in conflict (docs/adr/0014 D2).
+  workflow_run:
+    workflows: ["Test and Release"]
+    types: [completed]
+    branches: ["renovate/**"]
   workflow_dispatch:
     inputs:
       logLevel:
@@ -20,8 +27,19 @@ on:
 permissions:
   contents: read
 
+# One Renovate at a time: a run a check starts while another runs waits for it.
+concurrency:
+  group: renovate
+  cancel-in-progress: false
+
 jobs:
   renovate:
+    # A run after checks only for a green run on a branch of this repository,
+    # never for a fork's branch that happens to be named renovate/.
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_repository.full_name == github.repository)
     runs-on: self-hosted
     timeout-minutes: 30
     steps:
