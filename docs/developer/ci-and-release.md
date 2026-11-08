@@ -22,6 +22,11 @@ a make target; `semantic-release` needs every verification job ([ADR 0003](../ad
 | Release Tooling | `npm ci`, `npm audit signatures`, `make test-release-tooling` |
 | Semantic Release | on `main` after all of the above, with the GitHub App's token |
 
+Every job with Node.js, the two release jobs included, runs the major of `NODE_VERSION`, which
+Renovate moves in a pull request of its own ([ADR 0006](../adr/0006-one-version-of-every-tool.md) D1);
+never an alias like `lts/*`, which moves without one. Node 26 loads `libatomic1`, which the runner image
+lacks, so each of these jobs installs it before `setup-node`.
+
 ## Release Docker & Helm (`.github/workflows/build.yml`)
 
 On a published release: both images to Docker Hub as `guidedtraffic/dash-backend` and

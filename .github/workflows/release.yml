@@ -549,19 +549,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
+      # The Node of NODE_VERSION, not lts/*: an LTS alias moves without a pull
+      # request, and its move to Node 26 failed every pull request at once.
+      # Node 26 loads libatomic1, which the runner image lacks.
+      - name: Install build tools
+        run: sudo apt-get update && sudo apt-get install -y make libatomic1
+
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
-          node-version: "lts/*"
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Install dependencies
         run: npm ci
 
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         run: npm audit signatures
-
-      - name: Install build tools
-        run: sudo apt-get update && sudo apt-get install -y make
 
       - name: Verify release tooling renders release notes
         run: make test-release-tooling
@@ -601,10 +604,14 @@ jobs:
           path: .github/badges/
         continue-on-error: true
 
+      # The same Node as the release-tooling job, which proved this set on it.
+      - name: Install build tools
+        run: sudo apt-get update && sudo apt-get install -y libatomic1
+
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
-          node-version: "lts/*"
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Install dependencies
         run: npm ci
