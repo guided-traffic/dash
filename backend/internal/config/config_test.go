@@ -143,7 +143,7 @@ func TestTheFileShapes(t *testing.T) {
 		"explicit null":    {content: "~\n"},
 		"a list":           {content: "- a\n", problems: []string{"/c.yaml: line 1: the document: must be a mapping of keys"}},
 		"a single value":   {content: "hello\n", problems: []string{"/c.yaml: line 1: the document: must be a mapping of keys"}},
-		"not yaml":         {content: "a: [\n", problems: []string{"/c.yaml: line 1: did not find expected node content"}},
+		"not yaml":         {content: "a: [\n", problems: []string{"/c.yaml: line 2: did not find expected node content"}},
 		"an unknown key":   {content: "title: x\n", problems: []string{"/c.yaml: line 1: title: is not a known key"}},
 		"hajimari's names": {content: "defaultEnable: true\nshowAppUrls: false\n", problems: []string{"/c.yaml: line 1: defaultEnable: is not a known key", "/c.yaml: line 2: showAppUrls: is not a known key"}},
 		"hajimari's keys":  {content: "ui:\n  showSearch: true\n  lightTheme: x\n", problems: []string{"/c.yaml: line 2: ui.showSearch: is not a known key", "/c.yaml: line 3: ui.lightTheme: is not a known key"}},
@@ -251,7 +251,7 @@ labels2: {}
 	}, d.messages())
 }
 
-// yaml.v3 parses a key set twice into a node without complaint; the walk
+// go.yaml.in/yaml/v4 parses a key set twice into a node without complaint; the walk
 // refuses it, in a map as in a struct.
 func TestTheDecoderRefusesADuplicateMapKey(t *testing.T) {
 	var p probe

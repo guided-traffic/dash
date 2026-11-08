@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"go.yaml.in/yaml/v3"
+	"go.yaml.in/yaml/v4"
 )
 
 // decodeStrict decodes a YAML document into out, a pointer to a struct whose
