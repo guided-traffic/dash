@@ -149,7 +149,7 @@ describe('DashboardPage', () => {
     );
   });
 
-  it('greets by the time of day and welcomes to the environment, the time set apart', () => {
+  it('greets by the time of day and welcomes to the environment, in one face', () => {
     const now = new Date(2026, 9, 26, 19, 30);
     vi.setSystemTime(now);
     const d = dashboardOf();
@@ -158,7 +158,7 @@ describe('DashboardPage', () => {
     expect(text(host.querySelector('[data-testid=greeting]'))).toBe(
       'Good evening, welcome to production.',
     );
-    expect(text(host.querySelector('.display em'))).toBe('evening');
+    expect(host.querySelector('.display em, .display i, .display span')).toBeNull();
     expect(text(host.querySelector('.overview .bar .meta'))).toBe(
       `${longDate(now)} · ${shortTime(now)}`,
     );

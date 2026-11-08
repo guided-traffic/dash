@@ -34,7 +34,7 @@ before the first paint, because the CSP refuses inline scripts.
 
 **D4 — The UI's own glyphs are Material Symbols, inlined** in the bundle, so the shell draws while the
 backend is down. The font is Inter, self-hosted from npm; nothing loads from a CDN. *(The typeface is
-superseded by ADR 0012 D5: four faces, still self-hosted.)*
+superseded by ADR 0012 D5: three faces, still self-hosted.)*
 
 **D5 — The installation's default scheme applies once the dashboard answers.** `ui.defaultTheme`
 reaches the page with the dashboard; until then, and whenever the person has chosen a scheme, the

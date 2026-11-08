@@ -106,7 +106,7 @@ export class DashboardPage {
     const s = this.state();
     return s.kind === 'ready' ? arrange(s.dashboard) : undefined;
   });
-  /** The time of day and the environment, while ui.greeting is enabled. */
+  /** The greeting of the time of day and the environment, while ui.greeting is enabled. */
   protected readonly greeting = computed(() => {
     const s = this.state();
     if (s.kind !== 'ready' || !s.dashboard.ui.greeting.enabled) {

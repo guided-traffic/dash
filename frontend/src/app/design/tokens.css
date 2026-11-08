@@ -68,10 +68,8 @@
   --strip-green: light-dark(#138a52, #3dd68c);
 
   /* Typography, self-hosted from npm, no font CDN: Archivo for the display line and the names,
-     Instrument Serif's italic for the one accent word, Inter for text, Geist Mono for labels,
-     addresses and counts. */
+     Inter for text, Geist Mono for labels, addresses and counts. No face changes within a line. */
   --font-display: 'Archivo Variable', system-ui, sans-serif;
-  --font-serif: 'Instrument Serif', Georgia, serif;
   --font-body: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'Geist Mono Variable', ui-monospace, SFMono-Regular, Menlo, monospace;
 

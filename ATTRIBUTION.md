@@ -7,7 +7,6 @@ Third-party material in this repository and its images, one row per item.
 | `frontend/src/app/design/glyphs.ts` | Four Material Symbols glyphs (brightness_auto, light_mode, dark_mode, arrow_outward), path data of `@iconify-json/material-symbols` 1.2.96 | Google | https://github.com/google/material-design-icons | Apache-2.0 |
 | The frontend image (from `@fontsource-variable/inter` 5.3.0) | The Inter typeface | Rasmus Andersson | https://github.com/rsms/inter | SIL Open Font License 1.1 |
 | The frontend image (from `@fontsource-variable/archivo` 5.3.0) | The Archivo typeface | Omnibus-Type | https://github.com/Omnibus-Type/Archivo | SIL Open Font License 1.1 |
-| The frontend image (from `@fontsource/instrument-serif` 5.3.0, the italic) | The Instrument Serif typeface | Rodrigo Fuenzalida, Jordan Egstad | https://github.com/Instrument/instrument-serif | SIL Open Font License 1.1 |
 | The frontend image (from `@fontsource-variable/geist-mono` 5.3.0) | The Geist Mono typeface | Andrés Briganti, Mateo Zaragoza, Guillermo Rauch, Evil Rabbit, José Rago, Facundo Santana | https://github.com/vercel/geist-font | SIL Open Font License 1.1 |
 | The backend image, `mdi` pack (`@iconify-json/mdi`, pinned in `backend/icons/package.json`) | Material Design Icons | Pictogrammers | https://github.com/Templarian/MaterialDesign | Apache-2.0 |
 | The backend image, `material-symbols` pack (`@iconify-json/material-symbols`) | Material Symbols | Google | https://github.com/google/material-design-icons | Apache-2.0 |

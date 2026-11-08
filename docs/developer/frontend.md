@@ -18,7 +18,7 @@ icon, its fallback, its badges, what is hidden) was made by the backend.
 | [src/app/core/clock.ts](../../frontend/src/app/core/clock.ts) | The greeting's time of day and environment, the date and the time, to the minute |
 | [src/app/features/dashboard/](../../frontend/src/app/features/dashboard/dashboard.ts) | The page: the overview with the light strip over the greeting, the apps beside the bookmarks, the footer; the horizon where there is nothing to show |
 | [src/app/shared/](../../frontend/src/app/shared) | `item-icon` (a glyph as a mask, a logo as an image), `badge` (a square at a corner or a chip), `group-head` (a group's name and count), `theme-control` |
-| [src/app/design/tokens.css](../../frontend/src/app/design/tokens.css) | Every colour as a `light-dark()` pair — surfaces, text, hairlines, the accent, status, badge tones, the light strip's glass and lights — the four faces, the frame and the rhythm |
+| [src/app/design/tokens.css](../../frontend/src/app/design/tokens.css) | Every colour as a `light-dark()` pair — surfaces, text, hairlines, the accent, status, badge tones, the light strip's glass and lights — the three faces, the frame and the rhythm |
 | [src/styles.css](../../frontend/src/styles.css) | The page's ground and the two global classes: `.hud` (a mono label) and `.visually-hidden` |
 | [src/testing/](../../frontend/src/testing/dashboard.ts) | Fixtures of the dashboard answer, for the specs only |
 | `src/app/api/` | The client ng-openapi-gen writes (`make frontend-generate`), never edited, never formatted |
@@ -30,7 +30,7 @@ icon, its fallback, its badges, what is hidden) was made by the backend.
 ├ frame, ≤ 1280 px, hairline edges ───────────────────────┤
 │ 01 / OVERVIEW                          date · time       │   sticky bar
 │░░░░░░░░░░░░░▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░│   light strip, 4 px
-│ Good *evening*, welcome to production.                   │   or ui.title
+│ Good evening, welcome to production.                     │   or ui.title
 ├──────────────────────────────────┬──────────────────────┤
 │ 02 / APPS        13 apps · 3 gr. │ 03 / BOOKMARKS 8 links│   sticky bars
 │ MONITORING                     3 │ REPOSITORIES        3 │   group heads
@@ -92,9 +92,9 @@ bookmarks the apps take the frame's width.
 - **Width**: grids of `minmax(260px, 1fr)`; one column at phone width with a 16-pixel gutter (`--pad`)
   and no horizontal scroll (the end-to-end suite measures it). The crosshair ticks, which sit 6 pixels
   outside the frame, are drawn only from 1,300 pixels.
-- **Faces** (`angular.json` styles): `@fontsource-variable/inter`, `@fontsource-variable/archivo`,
-  `@fontsource-variable/geist-mono` and `@fontsource/instrument-serif`'s italic; served from the page's
-  origin, as its policy requires.
+- **Faces** (`angular.json` styles): `@fontsource-variable/inter`, `@fontsource-variable/archivo` and
+  `@fontsource-variable/geist-mono`, served from the page's origin, as its policy requires. One face
+  per line: no word set apart in another face or in italic.
 
 ## Tokens and contrast
 

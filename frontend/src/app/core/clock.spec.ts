@@ -19,11 +19,8 @@ describe('the clock', () => {
   });
 
   it('greets the environment, or none', () => {
-    expect(greeting(at(19), ' production ')).toEqual({
-      time: 'evening',
-      environment: 'production',
-    });
-    expect(greeting(at(9), '  ')).toEqual({ time: 'morning', environment: '' });
+    expect(greeting(at(19), ' production ')).toBe('Good evening, welcome to production.');
+    expect(greeting(at(9), '  ')).toBe('Good morning.');
   });
 
   it('writes the date and the time in the given language', () => {

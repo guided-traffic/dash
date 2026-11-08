@@ -28,8 +28,8 @@ one cluster, so its strip has one colour, set at install.
 `ui.showSummary` is gone, and so is the API's `summary`, which nothing else read. A tile keeps its
 status word and its line (ADR 0012 D3); the apps' bar keeps its count of apps and groups.
 
-**D2 — The greeting welcomes to the environment.** *Good morning, welcome to production.*, the time
-of day in the serif's italic: `ui.greeting.environment` replaces `ui.greeting.name`. Without an
+**D2 — The greeting welcomes to the environment.** *Good morning, welcome to production.*, in
+one face (ADR 0012 D5 as amended): `ui.greeting.environment` replaces `ui.greeting.name`. Without an
 environment the greeting is *Good morning.*; with `ui.greeting.enabled` off, the title as before.
 
 **D3 — Cogpit's light strip over the greeting.** A strip of frosted glass 4 pixels high, the

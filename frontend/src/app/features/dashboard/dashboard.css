@@ -49,7 +49,7 @@
   white-space: nowrap;
 }
 
-/* The display line: the greeting, its time of day in the serif's italic; or the title. */
+/* The display line: the greeting or the title, in one face. */
 .display {
   max-width: 1000px;
   margin: 0;
@@ -61,13 +61,6 @@
   line-height: 1.02;
   letter-spacing: -0.035em;
   overflow-wrap: anywhere;
-}
-
-.display em {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: -0.01em;
 }
 
 .display:last-child {

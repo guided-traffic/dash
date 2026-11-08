@@ -15,10 +15,11 @@ export function timeOfDay(date: Date): 'morning' | 'afternoon' | 'evening' | 'ni
   return 'night';
 }
 
-/** The greeting in its parts — the page sets the time of day apart: "Good *morning*, welcome to
- *  production." */
-export function greeting(date: Date, environment: string): { time: string; environment: string } {
-  return { time: timeOfDay(date), environment: environment.trim() };
+/** The greeting: "Good morning, welcome to production.", or "Good morning." without an
+ *  environment. */
+export function greeting(date: Date, environment: string): string {
+  const where = environment.trim();
+  return `Good ${timeOfDay(date)}${where ? `, welcome to ${where}` : ''}.`;
 }
 
 /** The date in the overview's bar, in the browser's language: "Monday, 26 October". */

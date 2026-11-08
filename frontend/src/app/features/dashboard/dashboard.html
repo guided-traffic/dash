@@ -39,10 +39,7 @@
             </div>
             <app-light-strip [settings]="v.dashboard.ui.light_strip" />
             @if (greeting(); as g) {
-              <p class="display" data-testid="greeting">
-                Good <em>{{ g.time }}</em
-                >{{ g.environment ? ', welcome to ' + g.environment : '' }}.
-              </p>
+              <p class="display" data-testid="greeting">{{ g }}</p>
             } @else {
               <p class="display">{{ v.dashboard.ui.title }}</p>
             }

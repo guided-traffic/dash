@@ -10,6 +10,8 @@ and the typeface of D4; its D2, D3, D5 and the glyphs of D4 stand. **Built** 202
 contrast in both schemes) and by `make e2e` in Chromium and WebKit, at desktop and phone width.
 **Amended** 2026-10-28 by [ADR 0013](0013-the-environment-under-cogpits-light-strip-no-counts-of-states.md):
 the overview of D2 lost its summary, its greeting names the environment under Cogpit's light strip.
+**Amended** 2026-10-28 (the owner: no change of face within a line): D5 has three faces, Instrument
+Serif's italic is gone.
 
 ## Context
 
@@ -60,7 +62,9 @@ bookmark row inverts. The keyboard's focus is a 2-pixel accent outline inside th
 **D5 — Four typefaces, self-hosted.** Archivo for the display line and the names, Instrument Serif's
 italic for the greeting's time of day only, Inter for text, Geist Mono for labels, addresses and
 counts; each from its Fontsource package on npm, nothing from a font CDN — the frontend's policy
-allows fonts from its own origin only (`font-src 'self' data:`).
+allows fonts from its own origin only (`font-src 'self' data:`). *Amended 2026-10-28: three faces,
+Archivo, Inter and Geist Mono; no face changes within a line, so the greeting is Archivo throughout
+and `@fontsource/instrument-serif` is no dependency.*
 
 **D6 — Square corners**, the badges included. The horizon stays the empty state of ADR 0005, its
 grid floor in hairlines, without the stage light.
