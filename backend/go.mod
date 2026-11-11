@@ -1,6 +1,6 @@
 module github.com/guided-traffic/dash/backend
 
-go 1.27.3
+go 1.27.4
 
 require (
 	github.com/getkin/kin-openapi v0.153.0

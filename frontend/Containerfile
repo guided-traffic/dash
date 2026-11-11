@@ -20,7 +20,7 @@ COPY src ./src
 RUN npx ng build --configuration production
 
 # Stage 2: the file server, standard library only.
-FROM --platform=$BUILDPLATFORM golang:1.27.3-alpine AS server
+FROM --platform=$BUILDPLATFORM golang:1.27.4-alpine AS server
 
 ARG TARGETOS
 ARG TARGETARCH
