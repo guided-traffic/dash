@@ -68,7 +68,7 @@ KUBECONFORM_VERSION ?= v0.8.0
 # Helm 4, built from its module with its version stamped in as its release build does; never the
 # helm on the PATH (docs/adr/0006 D3).
 # renovate: datasource=go depName=helm.sh/helm/v4
-HELM_VERSION ?= v4.3.1
+HELM_VERSION ?= v4.3.2
 # helm-unittest, built from its own module (it carries a replace directive, so go install cannot
 # build it) and run as its own binary: it renders with the Helm 4 engine it links.
 # renovate: datasource=go depName=github.com/helm-unittest/helm-unittest
