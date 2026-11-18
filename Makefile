@@ -60,7 +60,7 @@ GOCYCLO_VERSION ?= v0.6.0
 # renovate: datasource=go depName=github.com/securego/gosec/v2/cmd/gosec
 GOSEC_VERSION ?= v2.30.0
 # renovate: datasource=go depName=golang.org/x/vuln/cmd/govulncheck
-GOVULNCHECK_VERSION ?= v1.9.0
+GOVULNCHECK_VERSION ?= v1.10.0
 # renovate: datasource=go depName=github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen
 OAPI_CODEGEN_VERSION ?= v2.8.2
 # renovate: datasource=go depName=github.com/yannh/kubeconform/cmd/kubeconform
