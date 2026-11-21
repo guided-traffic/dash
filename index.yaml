@@ -2,8 +2,30 @@ apiVersion: v1
 entries:
   dash:
   - apiVersion: v2
+    appVersion: 0.7.13
+    created: "2026-11-21T08:33:11.670656918Z"
+    description: Dash, a start page for a Kubernetes cluster that finds its apps through
+      their Ingresses
+    digest: 5b2d062a52b8a22240ba737e1170d9604682e8fb0206f92ad8f4dd2788408cf1
+    home: https://github.com/guided-traffic/dash
+    keywords:
+    - dashboard
+    - start-page
+    - ingress
+    - discovery
+    maintainers:
+    - name: Guided Traffic
+      url: https://github.com/guided-traffic
+    name: dash
+    sources:
+    - https://github.com/guided-traffic/dash
+    type: application
+    urls:
+    - https://guided-traffic.github.io/dash/dash-0.7.13.tgz
+    version: 0.7.13
+  - apiVersion: v2
     appVersion: 0.7.12
-    created: "2026-11-19T08:46:18.815338551Z"
+    created: "2026-11-21T08:33:11.669575688Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: e1c485d7a19b8491a5010a0df9795c6ec361dc9e3b75ef51db28cfd3ed86caca
@@ -25,7 +47,7 @@ entries:
     version: 0.7.12
   - apiVersion: v2
     appVersion: 0.7.11
-    created: "2026-11-19T08:46:18.814497831Z"
+    created: "2026-11-21T08:33:11.66837358Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: 4ce38c1556f9429e1bafdf6a9b87a88337d6cf2d37f81ec2fa5724226d8dd499
@@ -47,7 +69,7 @@ entries:
     version: 0.7.11
   - apiVersion: v2
     appVersion: 0.7.10
-    created: "2026-11-19T08:46:18.81351417Z"
+    created: "2026-11-21T08:33:11.666831721Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: c17beceabe090fb922d245d9c5f3e4743040a206d33fac6d9f7a82fdfeada1be
@@ -69,7 +91,7 @@ entries:
     version: 0.7.10
   - apiVersion: v2
     appVersion: 0.7.9
-    created: "2026-11-19T08:46:18.823389665Z"
+    created: "2026-11-21T08:33:11.680087349Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: 02c66f3cf78c9630021362735dbb13f1c17b89e843d024199f32ea3559d7d9a2
@@ -91,7 +113,7 @@ entries:
     version: 0.7.9
   - apiVersion: v2
     appVersion: 0.7.8
-    created: "2026-11-19T08:46:18.822558834Z"
+    created: "2026-11-21T08:33:11.679192751Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: ef0149e19aba5fce577aa6e495a86e99b2949834005583a56f333180a8688908
@@ -113,7 +135,7 @@ entries:
     version: 0.7.8
   - apiVersion: v2
     appVersion: 0.7.7
-    created: "2026-11-19T08:46:18.820873738Z"
+    created: "2026-11-21T08:33:11.678167637Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: f9de8fc82657b9cac9b746a8be2a2f61766ea3d08fc081d14bf52fae6cb4ec1c
@@ -135,7 +157,7 @@ entries:
     version: 0.7.7
   - apiVersion: v2
     appVersion: 0.7.6
-    created: "2026-11-19T08:46:18.820169947Z"
+    created: "2026-11-21T08:33:11.677249536Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: 166f6c555cbd957335856f612e9f5a95f1c06930cb41264c3843dd263e3f5f24
@@ -157,7 +179,7 @@ entries:
     version: 0.7.6
   - apiVersion: v2
     appVersion: 0.7.5
-    created: "2026-11-19T08:46:18.819437081Z"
+    created: "2026-11-21T08:33:11.676348756Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: c17cf81e66fa1024c69f9c207499d51b3025f295395e7da83f26a11b943a95b2
@@ -179,7 +201,7 @@ entries:
     version: 0.7.5
   - apiVersion: v2
     appVersion: 0.7.4
-    created: "2026-11-19T08:46:18.818577725Z"
+    created: "2026-11-21T08:33:11.675194628Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: 288ecb4295872a100c997e9106c9364111c3b82abdeb6425e73c3e4ecb456164
@@ -201,7 +223,7 @@ entries:
     version: 0.7.4
   - apiVersion: v2
     appVersion: 0.7.3
-    created: "2026-11-19T08:46:18.817630365Z"
+    created: "2026-11-21T08:33:11.673272101Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: f6c483cae264f29eab98edf8e30affb488ed242336ddbe7d393fbecdff42e5df
@@ -223,7 +245,7 @@ entries:
     version: 0.7.3
   - apiVersion: v2
     appVersion: 0.7.2
-    created: "2026-11-19T08:46:18.816426308Z"
+    created: "2026-11-21T08:33:11.671615596Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: 1b916a8fc4c1a914fb4ac12856745a813e086afab152549cb2a6850a3333f165
@@ -245,7 +267,7 @@ entries:
     version: 0.7.2
   - apiVersion: v2
     appVersion: 0.7.1
-    created: "2026-11-19T08:46:18.812571988Z"
+    created: "2026-11-21T08:33:11.665980405Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: 57c82d3ad45604f475413efeb38d9a716eaac8bb87c61020cdd2b8471f4c66da
@@ -267,7 +289,7 @@ entries:
     version: 0.7.1
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2026-11-19T08:46:18.810341662Z"
+    created: "2026-11-21T08:33:11.665170647Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: 1347c6a25a16a2c0854b319326df24b43d07b704edb8065e908dc9ff1240efd9
@@ -289,7 +311,7 @@ entries:
     version: 0.7.0
   - apiVersion: v2
     appVersion: 0.6.3
-    created: "2026-11-19T08:46:18.809487907Z"
+    created: "2026-11-21T08:33:11.664314913Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: a2d1196f65da126aedf7ffd33d8edcfb5557ba6bccfa2864fae26f8318cf2871
@@ -311,7 +333,7 @@ entries:
     version: 0.6.3
   - apiVersion: v2
     appVersion: 0.6.2
-    created: "2026-11-19T08:46:18.808580901Z"
+    created: "2026-11-21T08:33:11.663374648Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: c04718988f8685ef07c5df865834bab40b4f030cc3399a64ed1d559c77836c73
@@ -333,7 +355,7 @@ entries:
     version: 0.6.2
   - apiVersion: v2
     appVersion: 0.6.1
-    created: "2026-11-19T08:46:18.807448199Z"
+    created: "2026-11-21T08:33:11.662446839Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: 472c4b740ae94c3a2cf6a5223335f167abbe25e01299600a963218eb234692b9
@@ -355,7 +377,7 @@ entries:
     version: 0.6.1
   - apiVersion: v2
     appVersion: 0.6.0
-    created: "2026-11-19T08:46:18.806563036Z"
+    created: "2026-11-21T08:33:11.661510031Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: 224deb70ced463b37e71cf2861bd801acc599ce09d30f7e7b2b893cb4a1d1b88
@@ -377,7 +399,7 @@ entries:
     version: 0.6.0
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2026-11-19T08:46:18.805733608Z"
+    created: "2026-11-21T08:33:11.66057127Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: 3299bafca502b16b103f7ffb5d0912d44a2dfa4199268fcba6d7b1068de500e7
@@ -399,7 +421,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2026-11-19T08:46:18.804995311Z"
+    created: "2026-11-21T08:33:11.659717078Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: dcc2b27856a3a9cb6d1cf545fc88d23b5ae5f075c1860e697a15041b66a1f497
@@ -421,7 +443,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2026-11-19T08:46:18.804214876Z"
+    created: "2026-11-21T08:33:11.658850564Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: 0fb67ae9c629b4cdcab262165058aeacb17428b1fcb95eb1e679737a0b45bf10
@@ -443,7 +465,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2026-11-19T08:46:18.803396708Z"
+    created: "2026-11-21T08:33:11.657617718Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: b084a58ac9cd6b6173e248488d55c5fca3afebe1fc5922074d8637aa5641a4e3
@@ -465,7 +487,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-11-19T08:46:18.802574353Z"
+    created: "2026-11-21T08:33:11.654511718Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: 84d192405fb51fa0a870bd75311d6b83e1a62a0bc5d5ca0948c5fbceb2ad2b5c
@@ -487,7 +509,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-11-19T08:46:18.801819755Z"
+    created: "2026-11-21T08:33:11.653423294Z"
     description: Dash, a start page for a Kubernetes cluster that finds its apps through
       their Ingresses
     digest: bd2cc4c62f6315ce0a168d905900e67c2fa8137c170adeba9b2968e1367a6a40
@@ -507,4 +529,4 @@ entries:
     urls:
     - https://guided-traffic.github.io/dash/dash-0.1.0.tgz
     version: 0.1.0
-generated: "2026-11-19T08:46:18.801089355Z"
+generated: "2026-11-21T08:33:11.652045445Z"
