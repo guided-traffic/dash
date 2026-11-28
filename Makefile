@@ -72,7 +72,7 @@ HELM_VERSION ?= v4.3.2
 # helm-unittest, built from its own module (it carries a replace directive, so go install cannot
 # build it) and run as its own binary: it renders with the Helm 4 engine it links.
 # renovate: datasource=go depName=github.com/helm-unittest/helm-unittest
-HELM_UNITTEST_VERSION ?= v1.2.1
+HELM_UNITTEST_VERSION ?= v1.3.0
 # kind and the node image of its release; both move together (renovate.json, group kind).
 # renovate: datasource=go depName=sigs.k8s.io/kind
 KIND_VERSION ?= v0.33.0
